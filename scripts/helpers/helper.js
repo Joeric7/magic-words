@@ -16,7 +16,7 @@ export const toCode = (func, num = 25) => {
     
         let index = func(num);
         arr.push(letters.charCodeAt(index));
-    
+        
     }
     return arr
 }
@@ -24,13 +24,11 @@ export const toCode = (func, num = 25) => {
 export const toText = (func, arr, num = 5) => {
     
     let text = '';
-    console.log('hola')
     for (let i of arr) {
-        
         let randomNumber = func(num);
         const value = i - randomNumber;
         text += String.fromCharCode(value);
-        console.log(text)
     } 
+    return text;
 }
 

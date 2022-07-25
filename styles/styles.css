@@ -41,6 +41,9 @@ main {
     font-family: sans-serif;
 
 }
+.hidden-container {
+    margin-top: 50px;
+}
 
 main button {
     padding: 1em;
