@@ -1,4 +1,4 @@
-const randomChoice = (num) => {
+export const randomChoice = (num = 0) => {
     if(num === 0){
         num = 10;
     }
@@ -6,7 +6,7 @@ const randomChoice = (num) => {
 }
 
 
-const toCode = (func, num = 25) => {
+export const toCode = (func, num = 25) => {
 
     const arr = [];
     const letters = 'abcdefghijklmnopkrstuvwxyz';
@@ -21,7 +21,7 @@ const toCode = (func, num = 25) => {
     return arr
 }
 
-const toText = (func, arr, num = 5) => {
+export const toText = (func, arr, num = 5) => {
     
     let text = '';
     console.log('hola')
@@ -34,6 +34,3 @@ const toText = (func, arr, num = 5) => {
     } 
 }
 
-const algo = toCode(randomChoice);
-
-toText(randomChoice, algo);
